@@ -3,16 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- internal styling example -->
+    <style>
+      ul {
+        border: 3px solid green;
+      }
+      ul > li {
+        font-style: italic;
+      }
+    </style>
+    <title>HTML Examples</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
     <!-- Example of the different heading types -->
-    <section>
+    <section id="headerSection">
+      <h1 id="WelcomeMessage">Hello world!</h1>
+      <h3>testing general sibling combinator</h3>
       <h2>Hello 2024_RTT_60</h2>
       <h3>Hello 2024_RTT_60</h3>
+      <h3>Duplicate h3 example</h3>
+      <h3>testing general sibling combinator selector</h3>
       <h4>Hello 2024_RTT_60</h4>
-      <p>Hello 2024_RTT_60</p>
+      <p><strong>Hello</strong> 2024_RTT_60</p>
     </section>
     <!-- Here Is an example of paragraph elements and the line break -->
     <p>
@@ -47,8 +60,9 @@
       This text is <sub>subscripted</sub>.<br />
     </p>
     <!-- We are creating a list example below -->
-    <section>
-      <ul>
+    <section class="listSectionGeneral" id="listSectionSpecific">
+      <!-- inline styling example -->
+      <ul style="border: 5px dashed red">
         Favorites
         <li>Green</li>
         <li>Lime</li>
@@ -81,5 +95,30 @@
     <a href="./pages/signIn.html">Sign In Page</a>
     <br />
     <a href="./pages/signUp.html">Sign Up Page</a>
+
+    <!-- table example -->
+     <table>
+        <caption>Fun list of favorite and least favorite movies</caption>
+        <tr>
+            <th>favorite movies</th>
+        </tr>
+        <tr>
+            <td>RHPS</td>
+        </tr>
+        <tr>
+            <td>Shock treatment</td>
+        </tr>
+        <tr>
+            <th>Least favorite movies</th>
+        </tr>
+        <tr>
+            <td>Wicked</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>this is the footer</td>
+            </tr>
+        </tfoot>
+     </table>
   </body>
 </html>

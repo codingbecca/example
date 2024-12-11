@@ -1,0 +1,68 @@
+/* body {
+    background-color: red;
+} */
+
+section, p {
+    background-color: ivory;
+}
+
+/* adjacent sibling combinator */
+section + p {
+    color: blueviolet;
+}
+
+h2 {
+    padding-left: 20px;
+    border: 2px solid;
+}
+
+h3 {
+    padding: 50px;
+    border: 5px dotted yellowgreen;
+    margin: 13px;
+}
+
+ul {
+    border: 10px dotted yellow;
+}
+
+/* id selector example */
+#WelcomeMessage {
+    background-color: coral;
+
+}
+
+/* general sibling combinator */
+h2 ~ h3 {
+    color: rgb(217, 217, 181);
+}
+
+#headerSection {
+    color: cadetblue;
+}
+
+#listSectionSpecific {
+    color: brown;
+}
+
+.listSelectionGeneral {
+    color: green;
+}
+
+/* pseudo-class example */
+a:hover {
+    color: hotpink;
+}
+
+/* pseudo-element example */
+p::first-line {
+    background-color: cornflowerblue;
+}
+
+table {
+    width: 500px;
+}
+
+td, tr {
+    border: 1px solid black;
+}
